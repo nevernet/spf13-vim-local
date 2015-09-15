@@ -6,6 +6,8 @@
 
 配置环境：
 
+```
 ln -s ~/.spf13-vim-local/.vimrc.local ~/.vimrc.local
 ln -s ~/.spf13-vim-local/.vimrc.before.fork ~/.vimrc.before.fork
 ln -s ~/.spf13-vim-local/.vimrc.bundle.local ~/.vimrc.bundle.local
+```
