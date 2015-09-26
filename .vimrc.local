@@ -1,22 +1,41 @@
 set backspace=eol,start  " Backspace for dummies
 set clipboard+=unnamedplus
 
+"PHP
+"let g:phpcomplete_index_composer_command=''
+autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
+autocmd FileType php setlocal completefunc=phpcomplete_extended#CompletePHP
+
 let g:airline#extensions#tabline#show_buffers = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
+" YCM settings
+let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<Enter>']
+let g:ycm_error_symbol = 'ER'
+let g:ycm_warning_symbol = 'WR'
+"let g:ycm_key_invoke_completion = '<D-Space>'
+let g:ycm_cache_omnifunc = 0
+
+
 map <C-l> :bn<CR>
 map <C-h> :bp<CR>
 map <Tab> :bn<CR>
+inoremap jk <esc>
 
-:map <M-s> :w<kEnter>  "Works in normal mode, must press Esc first"
-:imap <M-s> <Esc>:w<kEnter>i "Works in insert mode, saves and puts back in insert mode"
+":map <M-s> :w<kEnter>  "Works in normal mode, must press Esc first"
+":imap <M-s> <Esc>:w<kEnter>i "Works in insert mode, saves and puts back in insert mode"
 
 " 映射YCM vim-go跳转
-nmap <F3> :YcmCompleter GoToDefinition<CR>
+nmap <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " golang 配置
 au FileType go nmap <F3> :GoDef<CR>
+au FileType go nmap <F4> :GoDoc<CR>
+au FileType go nmap <F6> :GoRename<CR>
 au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <Leader>e <Plug>(go-rename)
 
@@ -33,6 +52,9 @@ let g:go_fmt_autosave = 1
 
 "git clone https://github.com/nevernet/molokai
 " move molokai/colors/molokai.vim to ~/.vim/colors
-"colorscheme molokai
-"let g:molokai_original = 1
-"let g:rehash256 = 1
+colorscheme molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
+
+autocmd FileType php setlocal softtabstop=4 tabstop=4 shiftwidth=4
+

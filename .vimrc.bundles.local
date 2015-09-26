@@ -1,1 +1,13 @@
 Bundle 'nevernet/molokai'
+
+"python
+Bundle 'davidhalter/jedi-vim'
+
+"php
+Bundle 'Shougo/vimproc.vim'
+Bundle 'Shougo/unite.vim'
+Bundle 'm2mdas/phpcomplete-extended'
+"Bundle 'shawncplus/phpcomplete.vim'
+
+
+"Bundle 'rdnetto/YCM-Generator'
