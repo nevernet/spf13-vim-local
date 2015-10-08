@@ -1,3 +1,6 @@
+if OSX() && has("gui_running")
+    set guifont=Monaco:h13,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
+
 set backspace=eol,start  " Backspace for dummies
 set clipboard+=unnamedplus
 
