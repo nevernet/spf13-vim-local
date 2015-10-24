@@ -8,6 +8,13 @@ Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/unite.vim'
 Bundle 'm2mdas/phpcomplete-extended'
 "Bundle 'shawncplus/phpcomplete.vim'
+"Bundle 'sebastiankessler/phpcomplete.vim'
 
+"Bundle 'Shougo/vimfiler.vim'
+
+"Bundle 'ervandew/supertab'
 
 "Bundle 'rdnetto/YCM-Generator'
+
+" nerdtree git plugin
+Bundle 'Xuyuanp/nerdtree-git-plugin'
