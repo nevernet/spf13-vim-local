@@ -2,17 +2,15 @@ if OSX() && has("gui_running")
     set guifont=Monaco:h14,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
 endif
 
-set backspace=eol,start  " Backspace for dummies
 set clipboard+=unnamedplus
-setlocal nospell
+set nospell
 
 " 禁止ctrlp自动忽略隐藏目录和文件
 let g:ctrlp_dotfiles = 1
 
-
 "PHP
-let g:phpcomplete_index_composer_command="composer"
-autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
+"let g:phpcomplete_index_composer_command="composer"
+"autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
 "autocmd FileType php setlocal completefunc=phpcomplete_extended#CompletePHP
 autocmd FileType php setlocal softtabstop=4 tabstop=4 shiftwidth=4
 
@@ -24,14 +22,16 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 
 " YCM settings
-let g:ycm_min_num_of_chars_for_completion = 1
-let g:ycm_add_preview_to_completeopt = 0
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<Enter>']
-let g:ycm_error_symbol = 'ER'
-let g:ycm_warning_symbol = 'WR'
-let g:ycm_key_invoke_completion = "<D-Space>"
-let g:ycm_cache_omnifunc = 0
+"let g:ycm_min_num_of_chars_for_completion = 1
+"let g:ycm_add_preview_to_completeopt = 0
+"let g:ycm_autoclose_preview_window_after_completion = 1
+"let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<Enter>']
+"let g:ycm_error_symbol = 'ER'
+"let g:ycm_warning_symbol = 'WR'
+"let g:ycm_key_invoke_completion = "<D-Space>"
+"let g:ycm_cache_omnifunc = 0
+" 映射YCM vim-go跳转
+"nmap <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 
 map <C-l> :bn<CR>
@@ -41,9 +41,6 @@ inoremap jk <esc>
 
 ":map <M-s> :w<kEnter>  "Works in normal mode, must press Esc first"
 ":imap <M-s> <Esc>:w<kEnter>i "Works in insert mode, saves and puts back in insert mode"
-
-" 映射YCM vim-go跳转
-nmap <F3> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " golang 配置
 au FileType go nmap <F3> :GoDef<CR>
