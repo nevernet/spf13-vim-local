@@ -3,12 +3,15 @@ Bundle 'nevernet/molokai'
 "python
 Bundle 'davidhalter/jedi-vim'
 
+"unite
+Bundle 'Shougo/vimproc.vim'
+Bundle 'Shougo/unite.vim'
+Bundle 'Shougo/unite-outline'
+
 "php
-"Bundle 'Shougo/vimproc.vim'
-"Bundle 'Shougo/unite.vim'
 "Bundle 'm2mdas/phpcomplete-extended'
 "Bundle 'shawncplus/phpcomplete.vim'
-"Bundle 'sebastiankessler/phpcomplete.vim'
+Bundle 'sebastiankessler/phpcomplete.vim'
 
 "Bundle 'Shougo/vimfiler.vim'
 

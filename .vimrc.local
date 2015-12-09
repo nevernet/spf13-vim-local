@@ -10,7 +10,7 @@ let g:ctrlp_dotfiles = 1
 
 "PHP
 "let g:phpcomplete_index_composer_command="composer"
-"autocmd FileType php setlocal omnifunc=phpcomplete_extended#CompletePHP
+autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 "autocmd FileType php setlocal completefunc=phpcomplete_extended#CompletePHP
 autocmd FileType php setlocal softtabstop=4 tabstop=4 shiftwidth=4
 
@@ -66,4 +66,5 @@ colorscheme molokai
 let g:molokai_original = 1
 let g:rehash256 = 1
 
+noremap <c-r> :Unite outline<CR>
 
