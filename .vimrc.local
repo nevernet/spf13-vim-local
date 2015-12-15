@@ -1,5 +1,5 @@
 if OSX() && has("gui_running")
-    set guifont=Monaco:h14,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
+    set guifont=Monaco:h13,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
 endif
 
 "neocomplete
@@ -8,9 +8,9 @@ let g:neocomplete#data_directory='~/.cache/neocomplete'
 let g:neocomplete#enable_fuzzy_completion = 1
 let g:neocomplete#force_omni_input_patterns = {}
 "let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-"let g:neocomplete#sources#omni#input_patterns.php = '\h\w*\|[^. \t]->\%(\h\w*\)\?\|\h\w*::\%(\h\w*\)\?'
+let g:neocomplete#sources#omni#input_patterns.php = '\h\w*\|[^. \t]->\%(\h\w*\)\?\|\h\w*::\%(\h\w*\)\?'
 "let g:neocomplete#sources#omni#input_patterns.php = '\h\w*\|[^. \t]->\w*::'
-let g:neocomplete#force_omni_input_patterns.php = '\h\w*\|[^- \t]->\w*'
+"let g:neocomplete#force_omni_input_patterns.php = '\h\w*\|[^- \t]->\w*'
 
 autocmd FileType python setlocal omnifunc=jedi#completions
 let g:jedi#completions_enabled = 0
@@ -34,7 +34,7 @@ let g:ctrlp_dotfiles = 1
 let g:DisableAutoPHPFolding = 1
 autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 "autocmd FileType php setlocal completefunc=phpcomplete_extended#CompletePHP
-autocmd FileType php setlocal softtabstop=4 tabstop=4 shiftwidth=4
+"autocmd FileType php setlocal softtabstop=4 tabstop=4 shiftwidth=4
 
 " supertab
 let g:SuperTabDefaultCompletionType = "<c-n>"

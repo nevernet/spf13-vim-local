@@ -9,6 +9,8 @@ Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/unite-outline'
 Bundle 'Shougo/vimfiler.vim'
 Bundle 'Shougo/neoinclude.vim'
+Bundle 'Shougo/vimshell.vim'
+
 
 "php
 "Bundle 'm2mdas/phpcomplete-extended'
